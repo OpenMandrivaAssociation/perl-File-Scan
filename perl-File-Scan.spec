@@ -1,7 +1,7 @@
 %define	module	File-Scan
 %define	name	perl-%{module}
 %define	version	1.43
-%define	release	1mdk
+%define	release	%mkrel 1
 
 Summary:	File::Scan is perl extension for Scanning files for Viruses
 Name:		%{name}
