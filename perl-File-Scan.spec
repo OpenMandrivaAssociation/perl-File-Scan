@@ -1,7 +1,7 @@
 %define	module	File-Scan
 %define	name	perl-%{module}
 %define	version	1.43
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 Summary:	Perl extension for Scanning files for Viruses
 Name:		%{name}
