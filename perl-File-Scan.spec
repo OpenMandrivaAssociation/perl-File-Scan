@@ -3,7 +3,7 @@
 %define	version	1.43
 %define	release	%mkrel 1
 
-Summary:	File::Scan is perl extension for Scanning files for Viruses
+Summary:	Perl extension for Scanning files for Viruses
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
