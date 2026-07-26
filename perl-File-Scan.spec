@@ -1,15 +1,13 @@
 %define	upstream_name	 File-Scan
-%define	upstream_version 1.43
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.43
+Release:	6
 
 Summary:	Perl extension for Scanning files for Viruses
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/File-Scan
-Source0:	https://cpan.metacpan.org/authors/id/H/HD/HDIAS/File-Scan-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HD/HDIAS/File-Scan-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ viruses. Its purpose is to provide a perl module to make platform
 independent virus scanners.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -43,9 +41,7 @@ make test
 %changelog
 * Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 1.430.0-1mdv2010.0
 + Revision: 409037
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.43-4mdv2009.0
+- rebuild using %1.43 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.43-4mdv2009.0
 + Revision: 257008
 - rebuild
 
